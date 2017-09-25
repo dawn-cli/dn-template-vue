@@ -3,9 +3,6 @@ init:
 
 dev:
   - name: clean
-  - name: copy
-    files:
-      ./build/(0).ico: ./src/assets/favicon.ico
   - name: webpack
     watch: true
   - name: server
@@ -14,9 +11,6 @@ dev:
 
 build:
   - name: clean
-  - name: copy
-    files:
-      (0): ./src/assets/favicon.ico
   - name: webpack
 
 test:
